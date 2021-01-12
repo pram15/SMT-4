@@ -2,7 +2,7 @@ let angka;
 
 let kata = "saya belajar";
 
-const data=100;
+const data = 100;
 
 angka = 5;
 

@@ -4,7 +4,10 @@ x = -x;
 
 console.log(x);
 
-let p=5, l=6, t=7, volume;
+let p = 5,
+  l = 6,
+  t = 7,
+  volume;
 
 // p = 5;
 // l= 6;
@@ -54,6 +57,6 @@ dec--;
 
 console.log(dec);
 
-let coba = (1-2, 2+1, 5+2);
+let coba = (1 - 2, 2 + 1, 5 + 2);
 
 console.log(coba);

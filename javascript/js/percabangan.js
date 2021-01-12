@@ -1,8 +1,8 @@
 // yang didalam kurung kurawal akan jalan jika kondisi didalam "true"
 if (true) {
-    console.log("dijalankan jika benar");
-}else{
-    console.log("dijalankan jika salah");
+  console.log("dijalankan jika benar");
+} else {
+  console.log("dijalankan jika salah");
 }
 
 let nilai = 60;
@@ -14,12 +14,11 @@ let batasbawah = 0;
 let peringatan = "Nilai Salah";
 
 if (nilai <= batasatas && nilai >= batasbawah) {
-    if (nilai >= standar) {
-        console.log(baik);
-    } else {
-        console.log(gagal);
-    }
+  if (nilai >= standar) {
+    console.log(baik);
+  } else {
+    console.log(gagal);
+  }
 } else {
-    console.log(peringatan);
+  console.log(peringatan);
 }
-
