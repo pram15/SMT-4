@@ -1,7 +1,353 @@
-body {
-  background: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+html {
+  scroll-behavior: smooth;
+}
+
+.logo img {
+  width: 200px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.header {
+  margin: 1%;
+}
+
+.nav-left,
+.nav-right {
+  background: royalblue;
+}
+
+.nav-left ul,
+.nav-right ul {
+  list-style: none;
+}
+
+.nav-left a,
+.nav-right a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #fff;
+}
+
+.nav-left a:hover {
+  background: rgb(252, 170, 170);
+}
+
+.nav-right a:hover {
+  background: rgb(252, 170, 170);
+}
+
+@media screen and (min-width: 560px) {
+  .header {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    margin-top: 1%;
+    justify-content: space-between;
+  }
+
+  .nav-left ul {
+    display: flex;
+  }
+
+  .nav-right ul {
+    display: flex;
+  }
+
+  .nav-left,
+  .nav-right {
+    background: none;
+  }
+
+  .nav-left a,
+  .nav-right a {
+    color: black;
+  }
+}
+
+/* main */
+
+.main {
+  margin-top: 20px;
+}
+
+.main-left img {
+  width: 250px;
+  display: flex;
+  margin: auto;
+}
+
+.main-right {
   text-align: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 560px) {
+  .main {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .main-left img {
+    width: 600px;
+  }
+
+  .main-right {
+    margin: auto;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .main-right h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: cursive;
+  }
+}
+
+/* produk */
+
+.display {
+  margin-top: 3%;
+  text-align: center;
+  color: blue;
+}
+
+.images img {
+  width: 250px;
+  display: block;
+  margin: auto;
+}
+
+.produk-content {
+  text-align: center;
+  margin: 20px;
+}
+
+.deskripsi p {
+  font-size: 20px;
+}
+
+@media (min-width: 560px) {
+  .produk {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .produk-content {
+    height: 400px;
+  }
+  .images {
+    height: 200px;
+    width: 200px;
+  }
+  .images img {
+    width: 200px;
+    display: block;
+    margin: auto;
+  }
+  .display {
+    font-size: 30px;
+  }
+}
+
+.btn-beli > button {
+  font-size: large;
+  width: 50px;
+  height: 30px;
+}
+
+/* informasi */
+
+.info {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-content {
+  height: 100px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.icon img {
+  width: 50px;
+  display: block;
+  margin-right: 10px;
+}
+
+.info-isi h2 {
+  font-size: 15px;
+}
+
+.info-isi p {
+  font-size: 12px;
+}
+
+@media (min-width: 560px) {
+  .info {
+    width: 960px;
+    margin: auto;
+    justify-content: space-between;
+  }
+}
+
+/* medsos */
+
+.medsos-icon img {
+  width: 30px;
+  margin: 10px;
+}
+
+.medsos-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.medsos-isi {
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.medsos-form {
+  height: 50px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medsos-form form input {
+  width: 200px;
+  height: 25px;
+  background-color: rgb(255, 243, 80);
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: -4px;
+}
+
+.medsos-form form input[type="email"] {
+  padding: 10px;
+}
+
+.medsos-form form button {
+  height: 25px;
+  padding: 5px;
+  text-transform: uppercase;
+  background-color: rgb(255, 243, 80);
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media (min-width: 560px) {
+  .medsos {
+    width: 960px;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+/* footer */
+
+footer {
+  margin-bottom: 100px;
+  background: rgb(82, 67, 67);
+  color: #fff;
+  display: flex;
+}
+
+.logo-bank img {
+  width: 70px;
+}
+
+.identitas {
+  flex: 1;
+}
+
+.sitemap {
+  flex: 1;
+}
+
+.sitemap li {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.sitemap li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.payment {
+  flex: 1;
+}
+
+.sitemap h2,
+.identitas h2 {
+  font-size: 14px;
+}
+
+.identitas p {
+  font-size: 12px;
+}
+
+.sitemap a {
+  font-size: 12px;
+}
+
+.bank p {
+  font-size: 20px;
+}
+
+.bank h3 {
+  font-size: 20px;
+}
+
+.bank {
+  margin-bottom: 17px;
+}
+
+@media (min-width: 560px) {
+  footer {
+    width: 960px;
+    margin: auto;
+    padding-top: 15px;
+  }
+
+  .sitemap h2,
+  .identitas h2 {
+    font-size: 20px;
+  }
+
+  .identitas p {
+    font-size: 15px;
+  }
+
+  .sitemap a {
+    font-size: 20px;
+  }
+
+  .identitas {
+    margin-left: 50px;
+  }
 }
