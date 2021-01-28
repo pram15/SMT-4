@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "..\\..\\toko-online"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "javascript"
+  }
+}
