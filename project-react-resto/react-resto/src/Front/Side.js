@@ -1,11 +1,11 @@
 import React from "react";
 
-const Nav = () => {
+const Side = () => {
   return (
     <div>
-      <h1>Nav</h1>
+      <h1>Sidebar</h1>
     </div>
   );
 };
 
-export default Nav;
+export default Side;

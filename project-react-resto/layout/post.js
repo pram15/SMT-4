@@ -4,11 +4,11 @@ export function post() {
   let data = {
     pelanggan: "pelanggan axios export",
     alamat: "alamat axios export",
-    telepon: "08913872189",
+    telepon: "096780489",
   };
 
   link.post("/pelanggan", data).then((res) => {
-    console.log(res);
+    // console.log(res);
     let tampil = `<h1>${res.data.pesan}</h1>`;
     document.querySelector("#out").innerHTML = tampil;
   });
