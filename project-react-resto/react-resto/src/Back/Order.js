@@ -163,6 +163,7 @@ const Order = () => {
             <thead>
               <tr>
                 <th>No</th>
+                <th>Faktur</th>
                 <th>Pelanggan</th>
                 <th>Tgl Order</th>
                 <th>Total</th>
@@ -175,6 +176,7 @@ const Order = () => {
               {isi.map((val, index) => (
                 <tr key={index}>
                   <td>{no++}</td>
+                  <td>{val.idorder}</td>
                   <td>{val.pelanggan}</td>
                   <td>{val.tglorder}</td>
                   <td>{val.total}</td>
