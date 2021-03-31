@@ -4,11 +4,20 @@ import Side from "./Side";
 import Main from "./Main";
 import Footer from "./Footer";
 
-const Front = () => {
+import { Redirect } from "react-router-dom";
+
+const Back = () => {
+  if (
+    sessionStorage.getItem("token") === "undefined" ||
+    sessionStorage.getItem("token") === null
+  ) {
+    return <Redirect to="/login" />;
+  }
+
   return (
-    <>
+    <div>
       <div className="row">
-        <div>
+        <div className="col-12">
           <Nav />
         </div>
       </div>
@@ -25,8 +34,8 @@ const Front = () => {
           <Footer />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Front;
+export default Back;
